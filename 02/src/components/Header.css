@@ -1,0 +1,13 @@
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+}
+
+li {
+    padding: 5px;
+}
+
+nav {
+    border-bottom: 1px solid black;
+}
