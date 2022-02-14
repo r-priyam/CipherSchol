@@ -39,6 +39,19 @@ export default function Header() {
                                                         Sign In
                                                     </NavLink>
                                                 )}
+                                                {!isLoggedIn && (
+                                                    <NavLink
+                                                        className={({ isActive }) =>
+                                                            `${
+                                                                isActive
+                                                                    ? 'bg-sky-600 text-white'
+                                                                    : 'text-gray-100 hover:bg-sky-700 hover:text-white'
+                                                            } rounded-md px-3 py-2 text-sm font-medium`
+                                                        }
+                                                        to={'/sign-up'}>
+                                                        Sign Up
+                                                    </NavLink>
+                                                )}
                                                 {isLoggedIn && (
                                                     <NavLink
                                                         className={({ isActive }) =>
